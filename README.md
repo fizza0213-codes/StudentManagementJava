@@ -77,5 +77,15 @@ StudentManagementJava/
 
 
    <img width="1082" height="692" alt="image" src="https://github.com/user-attachments/assets/c926e04e-e336-4337-924c-f23cb36190b1" />
+   <img width="1085" height="695" alt="image" src="https://github.com/user-attachments/assets/e14d9e66-cc60-4ae4-a69f-64246c9fc96f" />
+   <img width="1079" height="691" alt="image" src="https://github.com/user-attachments/assets/46312b6f-f103-4620-b248-f47783aa38dd" />
+   <img width="1085" height="689" alt="image" src="https://github.com/user-attachments/assets/26c81db5-6f6f-4eae-873a-717286615de7" />
+   <img width="1088" height="695" alt="image" src="https://github.com/user-attachments/assets/1ac317a4-1af3-4c3a-a1b0-0c9c02afcda7" />
+   <img width="1087" height="685" alt="image" src="https://github.com/user-attachments/assets/9b17c71f-4d09-4544-9d40-9ea30435d179" />
+
+
+
+
+
 
 
