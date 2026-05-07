@@ -75,3 +75,7 @@ StudentManagementJava/
 1. Open `src/main/java/com/student/Main.java`
 2. Click the **▶ green play button** next to `main()`
 
+
+   <img width="1082" height="692" alt="image" src="https://github.com/user-attachments/assets/c926e04e-e336-4337-924c-f23cb36190b1" />
+
+
