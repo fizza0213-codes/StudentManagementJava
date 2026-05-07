@@ -1,0 +1,17 @@
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Maven
+target/
+*.class
+
+# Data file (exclude from git — it's local state)
+students.csv
+
+# OS files
+.DS_Store
+Thumbs.db
