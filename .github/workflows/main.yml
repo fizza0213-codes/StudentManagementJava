@@ -7,26 +7,40 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build:
+  build-and-test:
     runs-on: ubuntu-latest
 
     steps:
-    # 1. Checkout your repository code onto the runner
+    # 1. Checkout repository code
     - name: Checkout Repository
       uses: actions/checkout@v4
 
-    # 2. Set up the Java JDK environment (change version if needed, e.g., 17 or 21)
+    # 2. Set up Java JDK 17 (Fixed warning by using v5)
     - name: Set up JDK 17
-      uses: actions/setup-java@v4
+      uses: actions/setup-java@v5
       with:
         java-version: '17'
         distribution: 'temurin'
         cache: 'maven'
 
-    # 3. Build and test with Maven (or replace with gradle if using gradle)
+    # 3. Build and run tests with Maven
     - name: Build with Maven
       run: mvn clean install
 
-    # 4. Optional: Add your deployment steps here for CD
-    # - name: Deploy to Server
-    #   run: echo "Add your deployment commands or actions here"
+  deploy:
+    needs: build-and-test       # Only runs if build and test succeed
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push' # Only deploy on pushes to main
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    # 4. Deployment Step (CD)
+    - name: Deploy Application
+      run: |
+        echo "Running deployment steps..."
+        # Add your server deployment commands here, for example:
+        # - SSH into your remote server and pull changes
+        # - Upload your built JAR file to AWS S3, Heroku, Docker Hub, etc.
+        echo "Deployment completed successfully!"
